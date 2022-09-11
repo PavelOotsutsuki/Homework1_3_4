@@ -12,15 +12,14 @@ namespace Homework1_3_4
         {
             const string CaseExit = "exit";
             const string CaseSum = "sum";
-            int arrayLength = 0;
-            int[] array = new int[arrayLength];
+            int[] array = new int[0];
             bool isEndProgram = false;
             int arraySum;
 
             while (isEndProgram == false)
             {
                 Console.Clear();
-                Console.WriteLine("Вы можете ввести либо число, которое добавится в массив, либо команду sum, которая высчитает сумму чисел в массиве, либо команду exit, для выхода из программы.");
+                Console.WriteLine("Вы можете ввести либо число, которое добавится в массив, либо команду " + CaseSum + ", которая высчитает сумму чисел в массиве, либо команду " + CaseExit + ", для выхода из программы.");
                 Console.WriteLine();
                 Console.WriteLine("Введите команду или число: ");
                 string command = Console.ReadLine();
