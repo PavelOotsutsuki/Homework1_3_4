@@ -14,7 +14,6 @@ namespace Homework1_3_4
             const string CaseSum = "sum";
             int[] array = new int[0];
             bool isEndProgram = false;
-            int arraySum;
 
             while (isEndProgram == false)
             {
@@ -27,7 +26,7 @@ namespace Homework1_3_4
                 switch (command)
                 {
                     case CaseSum:
-                        arraySum = 0;
+                        int arraySum = 0;
 
                         for(int arrayIndex=0; arrayIndex < array.Length; arrayIndex++)
                         {
